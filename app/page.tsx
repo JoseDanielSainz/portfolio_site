@@ -162,14 +162,13 @@ export default function Home() {
                 Creating dynamic visual content and motion graphics that bring ideas to life.
               </p>
               <div className="relative w-full max-w-3xl aspect-video rounded-lg overflow-hidden bg-gray-200 shadow-lg">
-                <video
-                  src="/mograph_reel_v1.mp4"
-                  controls
-                  className="w-full h-full object-cover"
-                  preload="metadata"
-                >
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  src="https://www.youtube.com/embed/0Aat2f6p7Vw"
+                  title="Motion Graphics Reel"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </div>
           )}
