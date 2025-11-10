@@ -57,7 +57,7 @@ export default function Home() {
             </a>
             <span className="text-gray-400">•</span>
             <a 
-              href="https://linkedin.com" 
+              href="www.linkedin.com/in/sainz-gonzalez-daniel" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-black transition-colors"
