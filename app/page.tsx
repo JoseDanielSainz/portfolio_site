@@ -22,9 +22,9 @@ export default function Home() {
           behind them, and make {filterLink("motion", "motion pieces")} when something needs explaining.
         </p>
         <p className="mt-8 max-w-[56ch]">
-          I care about the whole path from someone landing on a page to becoming a customer. That means the sign-up
-          flow, the CRM automation behind it, and the tracking that shows where people drop off, so the next
-          version converts better.
+          I like working on the whole path from someone landing on a page to becoming a customer. That includes the
+          sign-up flow, the CRM automation behind it and the tracking that shows where people drop off, so I can make
+          the next version convert better.
         </p>
         <p className="mt-4 max-w-[56ch] text-muted">
           Based in Culiacán, Mexico. At{" "}
@@ -41,13 +41,14 @@ export default function Home() {
         <h2 className="text-[15px] font-medium">About</h2>
         <div className="max-w-[60ch] space-y-5">
           <p>
-            I studied marketing at Tec de Monterrey and then taught myself to build, which is why I care whether a
-            design ships and whether it converts. Most of my work sits between design, code and growth: a page is only
-            done when it&apos;s live, tracked and getting better.
+            I studied marketing at Tec de Monterrey and then taught myself to build. That&apos;s why I like being
+            involved in both the design and development of a project, and in the measurement that shows how people
+            actually use it. Working across design, code and growth lets me spot what isn&apos;t working and fix it
+            quickly.
           </p>
           <p className="text-muted">
-            I work mostly in Next.js, Tailwind and Supabase, wire products into HubSpot and ad platforms, and do motion
-            and video when an idea needs to move.
+            I mostly work with Next.js, Tailwind and Supabase, connect projects to HubSpot and ad platforms, and do
+            motion graphics and video editing when a project needs it.
           </p>
           <p>
             <a href={`mailto:${site.email}`} className="link">

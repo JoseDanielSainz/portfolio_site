@@ -67,7 +67,7 @@ export const projects: Project[] = [
     slug: "agentes",
     title: "Agentes ClickBalance",
     summary:
-      "Referral platform that turns independent sales agents into an acquisition channel.",
+      "Referral platform where independent sales agents refer clients to ClickBalance for a commission.",
     year: "2025–now",
     disciplines: ["interfaces", "systems"],
     role: "Product design, full-stack build, lifecycle marketing",
@@ -85,42 +85,42 @@ export const projects: Project[] = [
       {
         heading: "The problem",
         paragraphs: [
-          "The idea behind the program: people who already know business owners refer them to ClickBalance and earn a commission. Our sales team handles the demo and the close.",
-          "Ads still play a part, but they recruit agents instead of customers. One agent can bring in clients for months, and commissions are tied to results: a booked demo or a closed sale. To make that work, agents need a place to sign up, learn the product, register referrals and get paid, and the team needs to see which agents are actually producing.",
+          "The idea behind the program is that people who already know business owners refer them to ClickBalance and earn a commission. Our sales team takes care of the demo and closing the sale.",
+          "We still use ads, but to recruit agents instead of customers. One agent can bring in clients for months, and they only get paid when a referral books a demo or buys. For this to work, agents need a place to sign up, learn about the product, register referrals and get paid, and our team needs to see which agents are bringing in clients.",
         ],
       },
       {
         heading: "What I built",
         paragraphs: [
-          "I designed and built the platform end to end, and I run the program's acquisition and lifecycle marketing.",
+          "I designed and built the platform from start to finish, and I also run the program's ads and email marketing.",
         ],
         list: [
-          "An agent lifecycle (registered → certified → active → closed a sale → inactive) synced to HubSpot, so sales and marketing work from the same stages.",
-          "A learning and certification module so agents can explain the product before they pitch it.",
-          "Commissions with invoice upload, and admin views where every state change is a single, explicit action.",
-          "A reports dashboard showing agent activity and conversion.",
-          "Meta Pixel and Conversions API tracking, and a six-stage lifecycle email program triggered by each agent's stage.",
+          "Agent stages (registered, certified, active, closed a sale, inactive) synced with HubSpot, so sales and marketing see the same information.",
+          "A course and certification module so agents understand the product before they start referring.",
+          "Commissions with invoice upload, plus admin views to review and approve each step.",
+          "A reports dashboard to see agent activity and conversion.",
+          "Meta Pixel and Conversions API tracking, and a six-step email sequence that changes depending on each agent's stage.",
         ],
       },
       {
         heading: "Results",
         paragraphs: [
           // TODO(Daniel): add the US dollar equivalent of MXN $3M
-          "More than 1,800 agents have registered since launch, and their referrals account for MXN $3M in active pipeline.",
-          "Most agents sign up and never refer anyone, which is normal for referral programs. That makes activation, the share of agents who refer at least one client, the number worth working on. Monthly activation went from 4% in April to 10% in September after three changes:",
+          "More than 1,800 agents have registered since launch, and their referrals add up to MXN $3M in active pipeline.",
+          "Most agents sign up and never refer anyone, which is normal for referral programs, so the number I focus on is activation: the share of agents who refer at least one client. Monthly activation went from 4% in April to 10% in September after three changes:",
         ],
         list: [
           // TODO(Daniel): confirm these three describe what you actually changed
-          "Ads aimed at recruiting people likely to refer, not just people likely to sign up.",
-          "More transparency for agents: clear commission terms and visibility into where each referral stands.",
-          "Rewritten course material, so agents can explain the product with confidence before they pitch it.",
+          "Ads focused on people who are more likely to refer clients.",
+          "More transparency for agents about their commissions and the status of their referrals.",
+          "Better course material, so agents feel confident explaining the product.",
         ],
         media: [
           {
             type: "image",
             src: "/work/agentes/reports.webp",
             alt: "Reports dashboard: agent funnel by stage, pipeline and revenue, agent growth and referred leads per month.",
-            caption: "The reports view the team uses to see which agents are actually producing. Shown with demo data.",
+            caption: "The reports view our team uses to see which agents are bringing in clients. Shown with demo data.",
           },
         ],
       },
@@ -148,19 +148,19 @@ export const projects: Project[] = [
       {
         heading: "What I did",
         paragraphs: [
-          "Designed and built the launch site for ClickBalance One. The site's job is to inform business owners about the product and to have them book a demo with the sales team.",
+          "I designed and built the launch site for ClickBalance One. Its goal is to explain the product to business owners and get them to book a demo with the sales team.",
         ],
         list: [
-          "Native demo form posting to HubSpot through its API, followed by a HubSpot Meetings scheduler.",
-          "End-to-end conversion tracking with GTM and GA4 for Google Ads.",
-          "SEO and GEO optimization to get more organic leads."
+          "A native demo form that sends leads to HubSpot through its API, followed by the HubSpot Meetings scheduler.",
+          "Conversion tracking with GTM and GA4 for Google Ads.",
+          "SEO and GEO work to bring in more organic leads."
         ],
       },
       {
         heading: "What I'm testing next",
         paragraphs: [
           // TODO(Daniel): fill in once you have numbers you can share
-          "I constantly update the site with new information and design tweaks to test what has a higher impact on conversion rates.",
+          "I'm constantly updating the site with new information and design changes to see what has the biggest impact on conversion.",
         ],
       },
     ],
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     slug: "lead-agent",
     title: "AI lead qualifying agent",
     summary:
-      "Follows up and qualifies leads through WhatsApp or voice, then hands off to a sales rep.",
+      "Follows up with leads through WhatsApp or a phone call, qualifies them and hands them off to a sales rep.",
     year: "2026",
     disciplines: ["systems"],
     role: "Design and build",
@@ -185,29 +185,29 @@ export const projects: Project[] = [
       {
         heading: "The problem",
         paragraphs: [
-          "Every demo request from the website waits for a sales rep to call. Leads that arrive at night or on a weekend wait until the next business day, and by then some of them don't remember signing up. When a rep does get through, the first minutes go to the same qualification questions on every call.",
+          "Right now, every demo request from the website waits for a sales rep to call. Leads that come in at night or on weekends wait until the next business day, and by then some of them don't remember signing up. When a rep does reach them, the first few minutes go to the same qualifying questions every time.",
         ],
       },
       {
         heading: "The approach",
         paragraphs: [
-          "The form asks how the lead wants to be contacted. If they pick now, the bot writes on WhatsApp within a minute or calls within five, asks three questions (industry, website, what they want to solve) and sends the calendar link. Once the demo is booked, it sends reminders 24 hours and 2 hours before.",
-          "A sales rep takes over whenever the bot shouldn't keep going: the lead chose to be contacted later, stops replying, asks for a person, or asks something the bot can't answer. Either way, the rep gives the demo with everything the bot collected already in HubSpot.",
-          "I'm testing two versions of the form. In one, the form asks who the lead is and the bot asks what they need. In the other, the form only asks for contact details and the bot does all the qualifying.",
+          "The form asks how the lead wants to be contacted. If they choose right now, the bot messages them on WhatsApp within a minute or calls them within five. It asks three questions (industry, website and what they want to solve) and sends the calendar link. Once the demo is booked, it sends reminders 24 and 2 hours before.",
+          "A sales rep takes over when the lead chose to be contacted later, stops replying, asks to talk to a person or asks something the bot can't answer. In every case, the rep gives the demo with everything the bot collected already in HubSpot.",
+          "I'm testing two versions of the form. In one, the form asks who the lead is and the bot asks what they need. In the other, the form only asks for contact details and the bot handles all the questions.",
         ],
       },
       {
         heading: "What success looks like",
-        paragraphs: ["Three numbers, measured against how leads are handled today:"],
+        paragraphs: ["I'll compare these three things against how leads are handled today:"],
         list: [
-          "Fewer leads who don't recognize having registered.",
-          "Shorter time from sign-up to first contact, especially outside business hours.",
-          "Less repeated qualification work for sales reps.",
+          "Fewer leads who don't remember registering.",
+          "Less time between signing up and first contact, especially outside business hours.",
+          "Less repetitive qualifying work for sales reps.",
         ],
       },
       {
         heading: "Working document",
-        paragraphs: ["The original map of version A, in Spanish."],
+        paragraphs: ["The original flow chart for version A, in Spanish."],
         media: [
           {
             type: "image",
@@ -239,7 +239,7 @@ export const projects: Project[] = [
       {
         heading: "Approach",
         paragraphs: [
-          "No stock footage. The spot is built from interface scenes I designed for motion, based on what ClickBalance One actually does: the tools a business juggles collapse into one, the assistant answers a question about a sales call and drafts the quote, then each module gets its moment.",
+          "Instead of stock footage, I designed interface scenes for the video based on ClickBalance One's features. It starts with the different tools a business uses turning into one, then shows the assistant answering a question about a sales call and drafting a quote, and ends with a quick look at each module.",
           "Voice-over in Spanish.",
         ],
       },
@@ -248,7 +248,7 @@ export const projects: Project[] = [
   {
     slug: "agile-method",
     title: "How ClickBalance works",
-    summary: "Explainer that teaches the company's squad, chapter and tribe model one layer at a time.",
+    summary: "Explainer video about the squad, chapter and tribe model we use at ClickBalance.",
     year: "2025",
     disciplines: ["motion"],
     role: "Script, motion design and edit", // TODO(Daniel): confirm
@@ -265,8 +265,8 @@ export const projects: Project[] = [
       {
         heading: "Approach",
         paragraphs: [
-          "Org models are abstract on paper. The piece uses one visual unit, a person, and builds it up step by step: a squad and its mission, the roles inside it, chapters across squads, and the tribe around them.",
-          "Three minutes, voice-over in Spanish, made for the whole company.",
+          "These team structures are hard to picture from a written description, so the video builds them up step by step, using one icon for each person. First a squad and its mission, then the roles inside it, then chapters across squads and finally the tribe.",
+          "It's three minutes long, with voice-over in Spanish, and it was made for the whole company.",
         ],
       },
     ],
@@ -274,7 +274,7 @@ export const projects: Project[] = [
   {
     slug: "notedash",
     title: "NoteDash",
-    summary: "Ear-training web app with timed drills for building relative pitch.",
+    summary: "Ear-training web app with timed drills to practice relative pitch.",
     year: "2025",
     disciplines: ["interfaces"],
     role: "Design and build",
@@ -289,7 +289,7 @@ export const projects: Project[] = [
       {
         heading: "What it is",
         paragraphs: [
-          "A side project I designed and shipped. You hear a note and answer by mouse or keyboard before the timer runs out. Settings for sharps or flats, one or two octaves and 15 to 90 second rounds keep it useful from beginner to advanced.",
+          "A side project I designed and built. You hear a note and answer with the mouse or keyboard before time runs out. You can choose sharps or flats, one or two octaves and rounds from 15 to 90 seconds, so it works for beginners and more advanced musicians.",
         ],
       },
     ],
