@@ -42,3 +42,5 @@ next-env.d.ts
 
 # large video files
 public/mograph_reel_v1.mp4
+# scratch files from Claude
+.claude-tmp/
