@@ -74,7 +74,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "Supabase", "HubSpot", "Meta Conversions API", "GTM"],
     outcome: "Monthly agent activation from 4% to 10%",
     featured: true,
-    draft: true, // TODO(Daniel): captures done. Confirm the copy below, then remove this line
+    draft: false, // TODO(Daniel): captures done. Confirm the copy below, then remove this line
     media: {
       type: "image",
       src: "/work/agentes/home.webp",
