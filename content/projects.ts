@@ -239,7 +239,7 @@ export const projects: Project[] = [
       {
         heading: "Approach",
         paragraphs: [
-          "No stock footage. Every shot is the real interface, rebuilt for motion: the tools a business juggles collapse into one, the assistant answers a question about a sales call and drafts the quote, then each module gets its moment.",
+          "No stock footage. The spot is built from interface scenes I designed for motion, based on what ClickBalance One actually does: the tools a business juggles collapse into one, the assistant answers a question about a sales call and drafts the quote, then each module gets its moment.",
           "Voice-over in Spanish.",
         ],
       },
