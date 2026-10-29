@@ -205,18 +205,6 @@ export const projects: Project[] = [
           "Less repetitive qualifying work for sales reps.",
         ],
       },
-      {
-        heading: "Working document",
-        paragraphs: ["The original flow chart for version A, in Spanish."],
-        media: [
-          {
-            type: "image",
-            src: "/work/lead-agent/flow-a-working.webp",
-            alt: "Original flow chart in Spanish for version A of the lead flow, with the demo form beside it.",
-            width: 640,
-          },
-        ],
-      },
     ],
   },
   {
